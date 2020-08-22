@@ -1,13 +1,101 @@
-<!DOCTYPE html>
-<html>
+<body>
+</body>
+</html>
 
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hackaton tres</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hackaton3</title>
 </head>
 
-
 <body>
+    <h1>Formulario de contacto</h1>
+    <p>Por favor, complete los siguientes datos:</p>
+    
+    <section>
+      <form class="formulario">
+         
+        <ul>
+            <li>
+              <label for="primerInput">Nombres</label>
+              <input class="green-input" id="primerInput" type="text" placeholder="Nombres" required>
+            </li>
+       
+            <li>
+              <label for="segundoInput">Apellido paterno</label>
+              <input id="segundoInput" type="text" placeholder="Apellido paterno" required>
+            </li>
+
+            <li>
+              <label for="tercerInput">Apellido materno</label>
+              <input id="tercerInput" type="text" placeholder="Apellido materno" required>
+            </li>
+
+            <li>
+              <label for="cuartoInput">Edad</label>
+              <input id="cuartoInput" type="number" placeholder="Edad" min="18" max="80" required>
+            </li>
+
+            <li>
+            <label for="quintoInput">DNI</label>
+            <input id="quintoInput" type="text" placeholder="DNI" required minlength="8" >
+            </li>
+
+            <li>
+            <label for="sextoInput">Email</label>
+            <input id="sextoInput" type="email" placeholder="Email" required>
+            </li>
+
+            <li>
+            <input type="submit" value="Enviar datos">
+            </li>
+        </ul>
+      </form>
+    </section>
+
+    <style>
+
+.formulario {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    color: black;
+    font-weight: bold;
+    padding: 1em;
+    margin: 0 auto;
+    border: 2px solid black;
+}
+
+.green-input:focus {
+    background-color: skyblue;
+    color: green;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: brown;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+form li + li {
+    margin-top: 10px;
+}
+
+label {
+    display: inline-block;
+    width: 80px;
+    text-align: left;
+}
+
+    </style>
+
 </body>
 </html>
